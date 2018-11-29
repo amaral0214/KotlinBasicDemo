@@ -1,0 +1,4 @@
+rootProject.name = 'kotlin'
+ext {
+    kotlin_version = "1.2.71"
+}

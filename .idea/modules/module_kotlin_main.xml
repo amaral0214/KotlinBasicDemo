@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_kotlin_main" default="compile.module.kotlin_main">
+  <dirname property="module.kotlin_main.basedir" file="${ant.file.module_kotlin_main}"/>
+  
+  <property name="module.jdk.home.kotlin_main" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.kotlin_main" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.kotlin_main" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.kotlin_main" value="-encoding UTF-8 -source 8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="kotlin_main.output.dir" value="${module.kotlin_main.basedir}/../../out/production/classes"/>
+  <property name="kotlin_main.testoutput.dir" value="${module.kotlin_main.basedir}/../../out/production/classes"/>
+  
+  <path id="kotlin_main.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="kotlin_main.module.production.classpath">
+    <path refid="${module.jdk.classpath.kotlin_main}"/>
+    <pathelement location="${basedir}/Could not find org.jetbrains.kotlin:Kotlin-allopen:1.2.71.
+Searched in the following locations:
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.pom
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.jar"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-common:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains:annotations:13.0.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-noarg:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.2.71.classpath"/>
+  </path>
+  
+  <path id="kotlin_main.runtime.production.module.classpath">
+    <pathelement location="${kotlin_main.output.dir}"/>
+    <pathelement location="${basedir}/Could not find org.jetbrains.kotlin:Kotlin-allopen:1.2.71.
+Searched in the following locations:
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.pom
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.jar"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-common:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains:annotations:13.0.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-noarg:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.2.71.classpath"/>
+  </path>
+  
+  <path id="kotlin_main.module.classpath">
+    <path refid="${module.jdk.classpath.kotlin_main}"/>
+    <pathelement location="${kotlin_main.output.dir}"/>
+    <pathelement location="${basedir}/Could not find org.jetbrains.kotlin:Kotlin-allopen:1.2.71.
+Searched in the following locations:
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.pom
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.jar"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-common:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains:annotations:13.0.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-noarg:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.2.71.classpath"/>
+  </path>
+  
+  <path id="kotlin_main.runtime.module.classpath">
+    <pathelement location="${kotlin_main.output.dir}"/>
+    <pathelement location="${basedir}/Could not find org.jetbrains.kotlin:Kotlin-allopen:1.2.71.
+Searched in the following locations:
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.pom
+  - https:/repo.maven.apache.org/maven2/org/jetbrains/kotlin/Kotlin-allopen/1.2.71/Kotlin-allopen-1.2.71.jar"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-common:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains:annotations:13.0.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-noarg:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.2.71.classpath"/>
+    <path refid="library.gradle:_org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.2.71.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.kotlin_main">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.kotlin_main">
+    <patternset refid="excluded.from.module.kotlin_main"/>
+  </patternset>
+  
+  <path id="kotlin_main.module.sourcepath">
+    <dirset dir="${module.kotlin_main.basedir}/../../src/main">
+      <include name="java"/>
+      <include name="kotlin"/>
+      <include name="resources"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.kotlin_main" depends="compile.module.kotlin_main.production,compile.module.kotlin_main.tests" description="Compile module kotlin_main"/>
+  
+  <target name="compile.module.kotlin_main.production" depends="register.custom.compilers" description="Compile module kotlin_main; production classes">
+    <mkdir dir="${kotlin_main.output.dir}"/>
+    <javac2 destdir="${kotlin_main.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.kotlin_main}/javac">
+      <compilerarg line="${compiler.args.kotlin_main}"/>
+      <bootclasspath refid="kotlin_main.module.bootclasspath"/>
+      <classpath refid="kotlin_main.module.production.classpath"/>
+      <src refid="kotlin_main.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.kotlin_main"/>
+    </javac2>
+    
+    <copy todir="${kotlin_main.output.dir}">
+      <fileset dir="${module.kotlin_main.basedir}/../../src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.kotlin_main.basedir}/../../src/main/kotlin">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.kotlin_main.basedir}/../../src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.kotlin_main.tests" depends="register.custom.compilers,compile.module.kotlin_main.production" description="compile module kotlin_main; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.kotlin_main" description="cleanup module">
+    <delete dir="${kotlin_main.output.dir}"/>
+    <delete dir="${kotlin_main.testoutput.dir}"/>
+  </target>
+</project>

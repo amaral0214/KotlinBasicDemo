@@ -1,6 +1,6 @@
-package com.zjnh.train
+package com.zjnh.kotlin.train
 
-import com.zjnh.train.annotations.Poko
+import com.zjnh.kotlin.train.annotations.Poko
 
 @Poko
 data class Country1(val id: Int, val name: String)

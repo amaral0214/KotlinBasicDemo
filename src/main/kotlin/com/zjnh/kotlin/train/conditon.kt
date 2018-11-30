@@ -1,4 +1,4 @@
-package com.zjnh.train
+package com.zjnh.kotlin.train
 
 private const val USERNAME="kotlin"
 private const val PASSWORD="jetbrains"
@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
 //        println("login fail!")
 //    }
 
-    val list=MyIntList()
+    val list= MyIntList()
     list.add(1)
     list.add(2)
     list.add(3)

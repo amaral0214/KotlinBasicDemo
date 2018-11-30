@@ -1,4 +1,4 @@
-package com.zjnh.train
+package com.zjnh.kotlin.train
 
 val range: IntRange = 0..1024
 

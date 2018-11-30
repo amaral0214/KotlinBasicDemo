@@ -1,4 +1,4 @@
-package com.zjnh.train
+package com.zjnh.kotlin.train
 
 abstract class Person(open val age: Int) {
     abstract val gender: Int
